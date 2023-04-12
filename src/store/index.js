@@ -1,10 +1,17 @@
 // gyvens app wide state
 import { createStore } from 'redux';
 
-const initState = { counter: 0 };
+const initState = { counter: 10 };
 
 // reducer function
-function counterReducer(state = initState, action) {}
+function counterReducer(state = initState, action) {
+  console.log('state ===', state);
+  console.log('action ===', action);
+  if (action.type === 'UP') {
+    return { counter: state.counter + 1 };
+  }
+  return state;
+}
 
 // store sukurimas
 const store = createStore(counterReducer);

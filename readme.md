@@ -9,4 +9,12 @@
 1. create store/index.js
 2. install redux `npm install redux react-redux`
 3. createStore and reducer fn
-4. Provide redux
+4. Provide redux `<Provider store={store}>`
+
+## use redux data
+
+1. useSelector() hook
+
+## modify redux data
+
+1. useDispach()
